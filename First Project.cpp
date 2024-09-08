@@ -1,23 +1,19 @@
-// CCS 202 My first project.cpp
+// This program caculates percentage discounts.
 //
-
-
-// This is the beginning of meny  small projects to come.
 
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
-    std::cout << "CSC 222 first Project.\n";
+	double regularPrice, percentDiscount, discountAmount,
+		reducedPrice;
+	regularPrice = 59.95;
+	percentDiscount = 0.2;
+	discountAmount = regularPrice * percentDiscount;
+	reducedPrice = regularPrice - discountAmount;
+	cout << "The discount amount is $" << discountAmount << endl;
+	cout << "The discounted price is $" << reducedPrice;
+	return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
