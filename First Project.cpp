@@ -2,7 +2,9 @@
 //
 
 #include <iostream>
+
 using namespace std;
+
 int main()
 {
 	double salary = 6000;
