@@ -1,23 +1,43 @@
-// CCS 202 My first project.cpp
-//
+//Project 1. Distance per Tank of Gas
 
+/* Description: A car with a 20-gallon gas tank averages 23.5 miles per gallon when driven in town, and 28.9
+miles per gallon when driven on the highway. Write a program that calculates and displays the
+distance the car can travel on one tank of gas when driven in town and when driven on the
+highway.*/
 
-// This is the beginning of meny  small projects to come.
+//Distance = Number of Gallons x Average Miles per Gallon
 
 #include <iostream>
 
+#include <iomanip>
+
+#include <string>
+
+#include <fstream>
+
+
+using namespace std;
+
 int main()
 {
-    std::cout << "CSC 222 first Project.\n";
+    double GallonsInTank = 20;
+    double Miles1 = 23.5;
+    double Miles2 = 28.9;
+    double Answer1;
+    double Answer2;
+
+    cout << "This programe will calculate how much a car with a 20 gallon tank of gas will consume,\n on a 23.5  mile drive in a town and 28.9 mile drive on the high way." << endl;
+
+    Answer1 = GallonsInTank * Miles1; // Town
+    Answer2 = GallonsInTank * Miles2; // Highway
+
+    cout << "It takes" << Answer1 << "miles for the car in the town and" << Answer2 << "for the car on the highway." << endl;
+
+    return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+/* 
+Program will strate up just  calculat the two variables
+Car has 20 gallon gas tank
+23.5 gal in town
+28.9 highway*/
