@@ -40,7 +40,8 @@ int main()
 }
 
 /* 
-Program will strate up just  calculat the two variables
-Car has 20 gallon gas tank
-23.5 gal in town
-28.9 highway*/
+* Program will strate up just calculat the two variables
+* Car has 20 gallon gas tank
+* 23.5 gal in town
+* 28.9 highway
+*/
