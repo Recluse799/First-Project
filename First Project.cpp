@@ -2,9 +2,8 @@
       Immanuel Braxton
       9/13/2024
       Project 1. Distance per Tank of Gas
-      Description: A car with a 20-gallon gas tank averages 23.5 miles per gallon when driven in town, and 28.9
-      miles per gallon when driven on the highway. Write a program that calculates and displays the
-      distance the car can travel on one tank of gas when driven in town and when driven on the
+      Description: This progam calucates the distance a car travels averaging 23.5 miles in town and 28.9 miles on a highway with a 
+      20-gallon gas tank. It displays the distance the car can travel on one tank of gas when driven in town and when driven on the
       highway.
  */
 
@@ -14,22 +13,18 @@
 
 #include <iomanip>
 
-#include <string>
-
-#include <fstream>
-
 
 using namespace std;
 
 int main()
 {
-    double GallonsInTank = 20;
+    int GallonsInTank = 20;
     double Miles1 = 23.5;
     double Miles2 = 28.9;
     double Answer1;
     double Answer2;
 
-    cout << "This programe will calculate how much a car with a 20 gallon tank of gas will consume,\non a 23.5 mile drive in a town and 28.9 mile drive on the high way.\n" <<endl;
+    cout << "This program will calculate how much a car with a 20 gallon tank of gas will travel,\n averaging 23.5 miles in a town and 28.9 on the highway.\n" <<endl;
 
     Answer1 = GallonsInTank * Miles1; // Town
     Answer2 = GallonsInTank * Miles2; // Highway
