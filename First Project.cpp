@@ -31,19 +31,19 @@ int main()
     double flourAnsw;
     double userAnsw;
 
-    cout << "How meny cookes do you want?" << endl;
+    cout << "How many cookes do you want?" << endl;
     cin >> userAnsw;
 
     sugarAnsw = cupOsugar * userAnsw;
     butterAnsw = cupObutter * userAnsw;
     flourAnsw = cupOflour * userAnsw;
 
-    cout << "You will need " << sugarAnsw << ;
+    cout << "You will need " << sugarAnsw << " cups of sugar, " << butterAnsw << " cups of butter, and " << flourAnsw << " cups of flour to make " << userAnsw << " cooks." << endl;
+
 }
 
 /*
-* 48 cooks max
-* loop these over a max of 48 times
+* 48 cooks max?
 *
 * variable for cups of sugar = 1.5
 * variable for cups of butter = 1
