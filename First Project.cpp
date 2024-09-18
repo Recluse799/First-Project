@@ -1,56 +1,51 @@
 /*
       Immanuel Braxton
       9/17/2024
-      Project 1. Ingredient Adjuster
+      Project 2. Interest Earned
       Description:
 
-      A cookie recipe calls for the following ingredients:
-
-      • 1.5 cups of sugar
-      • 1 cup of butter
-      • 2.75 cups of flour
-
-      The recipe produces 48 cookies with this amount of ingredients. Write a program that asks the user how
-      many cookies he or she wants to make, then displays the number of cups of each ingredient needed for
-      the specified number of cookies.
+     
  */
 
 #include <iostream>
 
 #include <iomanip>
 
+#include <cmath>
+
 using namespace std;
 
 int main()
 {
-    double cupOsugar = 1.5;
-    double cupObutter = 1;
-    double cupOflour = 2.75;
-    double sugarAnsw;
-    double butterAnsw;
-    double flourAnsw;
-    double userAnsw;
+    double principal;
+    double intRate;
+    double intcompound;
+    double savings;
 
-    cout << "How many cookes do you want?" << endl;
-    cin >> userAnsw;
+    cout << "This program will show you your account savings, after intrest for a year ( Given theres no other deposits)." << endl;
+    cout << "Please enter your Principal." << endl;
+    cin >> principal;
+    cout << "Please enter your intrest rate." << endl;
+    cin >> intRate;
+    cout << "Please enter your compound intrest." << endl;
+    cin >> intcompound;
 
-    sugarAnsw = cupOsugar * userAnsw;
-    butterAnsw = cupObutter * userAnsw;
-    flourAnsw = cupOflour * userAnsw;
+     
+    double expomental  = (1 + (intRate / intcompound));
+    double expomental2 = pow(expomental, intcompound);
+    savings = principal * expomental2;
+    
+    cout << "Intrest Rate:" << setw(8) << setprecision(2) << fixed << intRate << "%\n";
+    cout << "Times Compounded:" << setw(8) << intcompound;
+    cout << "Principal:" << setw(8) << "$" << principal;
+    cout << "Amount in Saveings:" << setw(8) << "$" << savings << endl;
 
-    cout << "You will need " << sugarAnsw << " cups of sugar, " << butterAnsw << " cups of butter, and " << flourAnsw << " cups of flour to make " << userAnsw << " cooks." << endl;
+    return 0;
 
 }
 
 /*
-* 48 cooks max?
-*
-* variable for cups of sugar = 1.5
-* variable for cups of butter = 1
-* variable for cups of flour = 2.75
-*
-* each ingredent will be added to a total of it's self.
-*
-* then all the totaled amounts will be shown
+* make var for principal, rate and t (times).
+* 
 *
 */
