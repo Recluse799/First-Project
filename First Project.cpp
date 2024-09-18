@@ -41,16 +41,3 @@ int main()
     cout << "You will need " << sugarAnsw << " cups of sugar, " << butterAnsw << " cups of butter, and " << flourAnsw << " cups of flour to make " << userAnsw << " cooks." << endl;
 
 }
-
-/*
-* 48 cooks max?
-*
-* variable for cups of sugar = 1.5
-* variable for cups of butter = 1
-* variable for cups of flour = 2.75
-*
-* each ingredent will be added to a total of it's self.
-*
-* then all the totaled amounts will be shown
-*
-*/
