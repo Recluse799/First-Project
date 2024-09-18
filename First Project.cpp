@@ -21,6 +21,7 @@ int main()
     double intRate;
     double intcompound;
     double savings;
+    double intrest;
 
     cout << "This program will show you your account savings, after intrest for a year ( Given theres no other deposits)." << endl;
     cout << "Please enter your Principal." << endl;
@@ -34,11 +35,13 @@ int main()
     double expomental  = (1 + (intRate / intcompound));
     double expomental2 = pow(expomental, intcompound);
     savings = principal * expomental2;
+    intrest = savings - principal;
     
-    cout << "Intrest Rate:" << setw(8) << setprecision(2) << fixed << intRate << "%\n";
-    cout << "Times Compounded:" << setw(8) << intcompound;
-    cout << "Principal:" << setw(8) << "$" << principal;
-    cout << "Amount in Saveings:" << setw(8) << "$" << savings << endl;
+    cout << "Intrest Rate:" << setw(14) << setprecision(2) << fixed << intRate << "%\n";
+    cout << "Times Compounded:" << setw(11) << intcompound << "\n";
+    cout << "Principal:" << setw(13) << "$" << principal << "\n";
+    cout << "Interest:" << setw(14) << "$" << intrest << "\n";
+    cout << "Amount in Savings:" << setw(5) << "$" << savings << endl;
 
     return 0;
 
