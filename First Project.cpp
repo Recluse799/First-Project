@@ -2,7 +2,9 @@
       Immanuel Braxton
       9/17/2024
       Project 2. Interest Earned
-      Description:
+      Description: "This program will show you your account savings,
+      after intrest for a year ( Given theres no other deposits)."
+      I ended up putting the program description in the description, because I couldn't think of anything better. :(
 
      
  */
@@ -46,9 +48,3 @@ int main()
     return 0;
 
 }
-
-/*
-* make var for principal, rate and t (times).
-* 
-*
-*/
