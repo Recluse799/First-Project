@@ -40,4 +40,5 @@ int main()
 
     cout << "You will need " << sugarAnsw << " cups of sugar, " << butterAnsw << " cups of butter, and " << flourAnsw << " cups of flour to make " << userAnsw << " cooks." << endl;
 
+    return 0;
 }
