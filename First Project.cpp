@@ -34,7 +34,7 @@ int main()
     cin >> intcompound;
 
      
-    double expomental  = (1 + (intRate / intcompound));
+    double expomental  = (1 + ((intRate/100) / intcompound));
     double expomental2 = pow(expomental, intcompound);
     savings = principal * expomental2;
     intrest = savings - principal;
