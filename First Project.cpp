@@ -23,9 +23,9 @@ using namespace std;
 
 int main()
 {
-    double cupOsugar = 1.5;
-    double cupObutter = 1;
-    double cupOflour = 2.75;
+    double cupOsugar = 1.5/48.0;
+    double cupObutter = 1/48.0;
+    double cupOflour = 2.75 /48.0;
     double sugarAnsw;
     double butterAnsw;
     double flourAnsw;
@@ -41,4 +41,5 @@ int main()
     cout << "You will need " << sugarAnsw << " cups of sugar, " << butterAnsw << " cups of butter, and " << flourAnsw << " cups of flour to make " << userAnsw << " cooks." << endl;
 
     return 0;
+
 }
